@@ -4,7 +4,7 @@
 <!-- Adding hrefs for external resources such as CSS and JS à la DRY -->
 <%= render 'hrefs' %>
 
-<table class="table table-stripped">
+<table style="margin-top: 50px;" class="table table-stripped table-responsive">
   <thead>
     <tr>
       <th>Name</th>
@@ -12,7 +12,7 @@
       <th>Price</th>
       <th>Damage</th>
       <th>Penetration</th>
-	<th>Video Game</th>
+      <th>Video Game</th>
       <th>Sound</th>
       <th>Image</th>
       <th>Note</th>
@@ -43,5 +43,5 @@
 <br>
 
 <form action="<%= new_weapon_path %>">
-	<input type="submit" value="New Weapon">
+	<input class="btn btn-primary" type="submit" value="New Weapon">
 </form>
