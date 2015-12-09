@@ -1,0 +1,54 @@
+<%= form_for(@weapon) do |f| %>
+  <% if @weapon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@weapon.errors.count, "error") %> prohibited this weapon from being saved:</h2>
+
+      <ul>
+      <% @weapon.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :weapon_type %><br>
+    <%= f.text_field :weapon_type %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :damage %><br>
+    <%= f.number_field :damage %>
+  </div>
+  <div class="field">
+    <%= f.label :penetration %><br>
+    <%= f.number_field :penetration %>
+  </div>
+<div class="field">
+    <%= f.label :video_game %><br>
+    <%= f.text_field :video_game %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sound %><br>
+    <%= f.text_field :sound %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.number_field :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

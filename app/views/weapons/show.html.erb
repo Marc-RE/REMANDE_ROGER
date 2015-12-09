@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @weapon.name %>
+</p>
+
+<p>
+  <strong>Weapon type:</strong>
+  <%= @weapon.weapon_type %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @weapon.price %>
+</p>
+
+<p>
+  <strong>Damage:</strong>
+  <%= @weapon.damage %>
+</p>
+
+<p>
+  <strong>Penetration:</strong>
+  <%= @weapon.penetration %>
+</p>
+
+<p>
+  <strong>Video Game:</strong>
+  <%= @weapon.video_game %>
+</p>
+
+
+<p>
+  <strong>Sound:</strong>
+  <audio controls><source src="<%= @weapon.sound %>" type="audio/wav"></audio>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <img src="<%= @weapon.image %>" alt="<%= @weapon.name %>" style="width: 100px;height: 60px;"/>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @weapon.note %>
+</p>
+
+<%= link_to 'Edit', edit_weapon_path(@weapon) %> |
+<%= link_to 'Back', weapons_path %>

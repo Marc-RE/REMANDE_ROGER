@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  weapon_type: MyString
+  price: 1
+  damage: 1
+  penetration: 1
+  sound: MyString
+  image: MyString
+  note: 1
+
+two:
+  name: MyString
+  weapon_type: MyString
+  price: 1
+  damage: 1
+  penetration: 1
+  sound: MyString
+  image: MyString
+  note: 1

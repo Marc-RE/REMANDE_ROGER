@@ -1,0 +1,47 @@
+<h1>Video Games Weapons</h1>
+
+
+<!-- Adding hrefs for external resources such as CSS and JS à la DRY -->
+<%= render 'hrefs' %>
+
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Weapon type</th>
+      <th>Price</th>
+      <th>Damage</th>
+      <th>Penetration</th>
+	<th>Video Game</th>
+      <th>Sound</th>
+      <th>Image</th>
+      <th>Note</th>
+      <th colspan="3">Controls</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @weapons.each do |weapon| %>
+      <tr>
+        <td><%= weapon.name %></td>
+        <td><%= weapon.weapon_type %></td>
+        <td><%= weapon.price %></td>
+        <td><%= weapon.damage %></td>
+        <td><%= weapon.penetration %></td>
+	<td><%= weapon.video_game %></td>
+        <td><audio controls><source src="<%= weapon.sound %>" type="audio/wav"></audio></td>
+        <td><img src="<%= weapon.image %>" alt="<%= weapon.name %>" style="width: 100px;height: 60px;"/></td>
+        <td><%= weapon.note %></td>
+	<td><%= link_to 'Show', weapon %></td>
+        <td><%= link_to 'Edit', edit_weapon_path(weapon) %></td>
+	<td><%= link_to 'Destroy', weapon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<form action="<%= new_weapon_path %>">
+	<input type="submit" value="New Weapon">
+</form>
