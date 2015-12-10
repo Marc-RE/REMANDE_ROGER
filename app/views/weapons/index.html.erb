@@ -30,9 +30,9 @@
         <td><audio controls><source src="<%= weapon.sound %>" type="audio/wav"></audio></td>
         <td><img src="<%= weapon.image %>" alt="<%= weapon.name %>" style="width: 100px;height: 60px;"/></td>
         <td><%= weapon.note %></td>
-	<td><%= link_to 'Show', weapon %></td>
-        <td><%= link_to 'Edit', edit_weapon_path(weapon) %></td>
-	<td><%= link_to 'Destroy', weapon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td><div class="btn btn-primary"><%= link_to 'Show', weapon %></div></td>
+        <td><div class="btn btn-primary"><%= link_to 'Edit', edit_weapon_path(weapon) %></div></td>
+	<td><div class="btn btn-primary"><%= link_to 'Destroy', weapon, method: :delete, data: { confirm: 'Are you sure?' } %></div></td>
       </tr>
     <% end %>
   </tbody>

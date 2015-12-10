@@ -5134,3 +5134,548 @@ Processing by WeaponsController#index as JSON
   [1m[36mWeapon Load (0.5ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
   Rendered weapons/index.json.jbuilder (6.6ms)
 Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:01:24 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.9ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:01:25 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.4ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:01:25 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.4ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:01:25 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.2ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:01:25 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.3ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:01:36 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.4ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 47ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:01:36 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:01:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:01:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:01:37 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:01:37 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:01:37 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:01:37 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:01:37 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:01:37 +0100
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.8ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 70ms (Views: 67.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:07:08 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:07:09 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:07:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:07:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:07:17 +0100
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.8ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:15:55 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:15:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:15:56 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:15:56 +0100
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.5ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:16:53 +0100
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.8ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:12 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:17:13 +0100
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.2ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 66ms (Views: 65.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:17:32 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:17:33 +0100
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.3ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:18:05 +0100
+
+
+Started GET "/weapons/1" for 109.11.151.109 at 2015-12-10 11:18:13 +0100
+Processing by WeaponsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWeapon Load (0.2ms)[0m  SELECT  "weapons".* FROM "weapons"  WHERE "weapons"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered weapons/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/weapons" for 109.11.151.109 at 2015-12-10 11:18:17 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.2ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/weapons/new" for 109.11.151.109 at 2015-12-10 11:18:25 +0100
+Processing by WeaponsController#new as HTML
+  Rendered weapons/_form.html.erb (7.0ms)
+  Rendered weapons/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:18:26 +0100
+
+
+Started GET "/weapons/new" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+Processing by WeaponsController#new as HTML
+  Rendered weapons/_form.html.erb (9.9ms)
+  Rendered weapons/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:20:41 +0100
+
+
+Started GET "/weapons/new" for 109.11.151.109 at 2015-12-10 11:23:01 +0100
+Processing by WeaponsController#new as HTML
+  Rendered weapons/_form.html.erb (9.0ms)
+  Rendered weapons/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 82ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:23:01 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:23:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:23:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:02 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:02 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:02 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:02 +0100
+
+
+Started GET "/weapons/" for 109.11.151.109 at 2015-12-10 11:23:29 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.7ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:23:29 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:23:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:23:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:30 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:30 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:23:30 +0100
+
+
+Started GET "/weapons/" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.8ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 82ms (Views: 79.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:25:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:25:47 +0100
+
+
+Started GET "/weapons/new" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+Processing by WeaponsController#new as HTML
+  Rendered weapons/_form.html.erb (7.3ms)
+  Rendered weapons/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:29:03 +0100
+
+
+Started GET "/weapons/new" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+Processing by WeaponsController#new as HTML
+  Rendered weapons/_form.html.erb (9.3ms)
+  Rendered weapons/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 100ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-10 11:31:17 +0100
+
+
+Started GET "/weapons/" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.5ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-10 11:31:25 +0100
