@@ -7824,3 +7824,623 @@ Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 11:
             FROM sqlite_temp_master
             WHERE name='index_weapons_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for 77.154.204.2 at 2015-12-21 12:31:56 +0100
+Processing by WeaponsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `authenticate_user!' for #<WeaponsController:0x007f5f4035cc20>):
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:429:in `block in make_lambda'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `block in halting'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `each'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `block in instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/base.rb:136:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionview-4.1.10/lib/action_view/rendering.rb:30:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:196:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:232:in `block in action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:50:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/migration.rb:380:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:02:34 +0100
+Processing by WeaponsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `authenticate_user!' for #<WeaponsController:0x00000005199830>):
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:429:in `block in make_lambda'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `block in halting'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `each'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `block in instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/base.rb:136:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionview-4.1.10/lib/action_view/rendering.rb:30:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:196:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:232:in `block in action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:50:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/migration.rb:380:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:03:09 +0100
+Processing by WeaponsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `authenticate_user' for #<WeaponsController:0x00000004b51f18>):
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:429:in `block in make_lambda'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `block in halting'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `each'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `block in instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/base.rb:136:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionview-4.1.10/lib/action_view/rendering.rb:30:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:196:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:232:in `block in action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:50:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/migration.rb:380:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:03:11 +0100
+Processing by WeaponsController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `authenticate_user' for #<WeaponsController:0x00000003b74ac8>):
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:429:in `block in make_lambda'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:161:in `block in halting'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `each'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:501:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:86:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/callbacks.rb:19:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rescue.rb:29:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `block in instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/notifications.rb:159:in `instrument'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/abstract_controller/base.rb:136:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionview-4.1.10/lib/action_view/rendering.rb:30:in `process'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:196:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_controller/metal.rb:232:in `block in action'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:50:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/migration.rb:380:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.5ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:05:13 +0100
+
+NoMethodError (undefined method `device_for' for #<ActionDispatch::Routing::Mapper:0x000000022b1e28>):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:05:39 +0100
+
+NameError (uninitialized constant User):
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:05:40 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.5ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:05:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:05:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:11:26 +0100
+
+NameError (uninitialized constant User):
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/users" for 109.11.151.109 at 2015-12-21 14:11:28 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapon_types_on_weapon_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapon_types_on_weapon_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapons_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapons_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapons_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapons_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:20:20 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.8ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 1.2ms)
+
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00000004f98248>:0x00000004f8b6d8>):
+    21: <body>
+    22: 
+    23: <p class="navbar-text pull-right">
+    24: <% if user_signed_in? %>
+    25:   Logged in as <strong><%= current_user.email %></strong>.
+    26:   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+    27:   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  app/views/layouts/application.html.erb:24:in `_app_views_layouts_application_html_erb__158376376939670000_41676520'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.2ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.5ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-21 14:21:16 +0100
+
+
+Started GET "/weapons/new" for 109.11.151.109 at 2015-12-21 14:27:42 +0100
+Processing by WeaponsController#new as HTML
+  Rendered weapons/_form.html.erb (6.5ms)
+  Rendered weapons/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-21 14:27:42 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-21 14:27:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
