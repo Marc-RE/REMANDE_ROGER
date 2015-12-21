@@ -8444,3 +8444,414 @@ Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43
 
 
 Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:27:43 +0100
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:38:43 +0100
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:238:in `const_get'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:236:in `each'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:236:in `inject'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:236:in `constantize'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/migration.rb:380:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:38:43 +0100
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:238:in `const_get'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:236:in `each'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:236:in `inject'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/inflector/methods.rb:236:in `constantize'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:46:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:73:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `each'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/journey/router.rb:59:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/routing/route_set.rb:692:in `call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+  vendor/bundle/ruby/2.1.0/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/etag.rb:23:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/conditionalget.rb:25:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/flash.rb:254:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/cookies.rb:562:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activerecord-4.1.10/lib/active_record/migration.rb:380:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/callbacks.rb:82:in `run_callbacks'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (25.1ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.6ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:39:04 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-21 14:39:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20151221134328)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151221134328"]]
+  [1m[36m (7.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapon_types_on_weapon_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapon_types_on_weapon_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapons_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapons_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapons_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapons_on_email' AND type='index'
+[0m
+
+
+Started GET "/users" for 109.11.151.109 at 2015-12-21 14:44:12 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users"):
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/runtime.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/activesupport-4.1.10/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/static.rb:84:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/sendfile.rb:112:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/engine.rb:514:in `call'
+  vendor/bundle/ruby/2.1.0/gems/railties-4.1.10/lib/rails/application.rb:144:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/lock.rb:17:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/content_length.rb:14:in `call'
+  vendor/bundle/ruby/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered vendor/bundle/ruby/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.9ms)
+
+
+Started GET "/users/sign_up" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started GET "/assets/dark_bg.jpg" for 109.11.151.109 at 2015-12-21 14:45:06 +0100
+
+
+Started POST "/users" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3F3DloAnCNP7ltZZ7bD8PQulbbj2+3uFBU4o5uFX7qg=", "user"=>{"email"=>"marc@vpshark.io", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'marc@vpshark.io' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2015-12-21 13:45:22.660830"], ["email", "marc@vpshark.io"], ["encrypted_password", "$2a$10$PG/y6Ri00zo1jBoU6XgIqedSIyf2kJTysfBJW8GIq405NQk/vTR4a"], ["updated_at", "2015-12-21 13:45:22.660830"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2015-12-21 13:45:22.670862"], ["current_sign_in_ip", "109.11.151.109"], ["last_sign_in_at", "2015-12-21 13:45:22.670862"], ["last_sign_in_ip", "109.11.151.109"], ["sign_in_count", 1], ["updated_at", "2015-12-21 13:45:22.672647"]]
+  [1m[35m (5.4ms)[0m  commit transaction
+Redirected to http://cdn.vpshark.io/
+Completed 302 Found in 159ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+Processing by WeaponsController#index as HTML
+  [1m[36mWeapon Load (0.3ms)[0m  [1mSELECT "weapons".* FROM "weapons"[0m
+  Rendered weapons/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:22 +0100
+
+
+Started GET "/" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+Processing by WeaponsController#index as HTML
+  [1m[35mWeapon Load (0.3ms)[0m  SELECT "weapons".* FROM "weapons"
+  Rendered weapons/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/weapons.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/weapons.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 109.11.151.109 at 2015-12-21 14:45:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapon_types_on_weapon_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapon_types_on_weapon_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapons_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapons_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_weapons_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_weapons_on_email' AND type='index'
+[0m
